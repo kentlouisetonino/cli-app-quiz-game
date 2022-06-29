@@ -14,8 +14,12 @@
 - Github Actions
 
 ### Setup
-1. Run `npm install`.
-2. Run `npm start`.
+1. Run the following commands.
+```bash
+git clone https://github.com/kenttonino/cli-quiz-game.git
+npm install
+npm start
+```
 
 ### Screenshots | Recordings
 https://user-images.githubusercontent.com/69438999/176536024-114c6c46-1b54-4923-979f-1ca2b9314129.mp4
