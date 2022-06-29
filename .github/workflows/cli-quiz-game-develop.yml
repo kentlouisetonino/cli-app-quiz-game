@@ -11,9 +11,8 @@ permissions:
   checks: write
   contents: write
 jobs:
-  build:
+  clean:
     runs-on: ${{ matrix.os }}
-    needs: build
     strategy:
       matrix:
         os: [ubuntu-18.04]
