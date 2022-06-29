@@ -68,13 +68,3 @@ await questionaire(
 )
 
 await winner(playerName)
-
-
-
-
-
-
-
-
-
-
