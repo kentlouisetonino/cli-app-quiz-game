@@ -75,7 +75,7 @@ async function winner() {
   const message = `Congrats, ${playerName}!`
 
   figlet(message, (err, data) => {
-    console.log(gradient.pastel.multiline(data))
+    console.log(gradient.morning.multiline(data))
   })
 }
 
