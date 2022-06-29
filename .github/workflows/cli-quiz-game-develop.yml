@@ -11,8 +11,7 @@ permissions:
   checks: write
   contents: write
 jobs:
-  clean:
-    name: clean
+  build:
     runs-on: ${{ matrix.os }}
     needs: build
     strategy:
