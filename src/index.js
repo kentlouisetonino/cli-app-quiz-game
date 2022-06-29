@@ -7,79 +7,79 @@ import chalkAnimation from 'chalk-animation'
 import figlet from 'figlet'
 import { createSpinner } from 'nanospinner'
 
+import welcome from './lib/welcome.lib.js'
+import sleep from './lib/sleep.lib.js'
+import askName from './lib/ask-name.lib.js'
+import questionaire from './lib/questionaire.lib.js';
+import winner from './lib/winner.lib.js';
+
 let playerName
+await welcome('JAVASCRIPT')
+playerName = await askName()
 
-// Number of seconds to show it to user
-const sleep = (ms = 1000) => new Promise((r) => setTimeout(r, ms))
+await questionaire(
+  playerName,
+  1,
+  'JavaScript was created in 10 days then released on? \n',
+  [
+    'May 23rd, 1995', 
+    'Nov 24th, 1995', 
+    'Dec 4th, 1995', 
+    'Dec 17, 1996',
+  ],
+  'Dec 4th, 1995'
+)
 
-async function welcome() {
-  const neonTitle = chalkAnimation.neon(
-    'Who wants to be a JavaScript Wizard? \n'
-  )
+await questionaire(
+  playerName,
+  2,
+  'Which operator returns true if the two compared values are not equal? \n',
+  [
+    '<>', 
+    '~', 
+    '==!', 
+    '!==',
+  ],
+  '!=='
+)
 
-  await sleep()
-  neonTitle.stop()
+await questionaire(
+  playerName,
+  3,
+  'How is a forEach statement different from a for statement? \n',
+  [
+    'Only a for statement uses a callback function.', 
+    'A for statement is generic, but a forEach statement can be used only with an array.', 
+    'Only a forEach statement lets you specify your own iterator.', 
+    'A forEach statement is generic, but a for statement can be used only with an array.',
+  ],
+  'A for statement is generic, but a forEach statement can be used only with an array.'
+)
 
-  console.log(`
-    ${chalk.bgBlue('How To Play')}
-    I am a process on your computer.
-    If you get any question wrong I will be ${chalk.bgRed('killed')}.
-    So get all the questions right.
-  `)
-}
+await questionaire(
+  playerName,
+  4,
+  'Which statement is the correct way to create a variable called rate and assign it the value 100? \n',
+  [
+    'let rate = 100', 
+    'let 100 = rate', 
+    '100 = let rate', 
+    'rate = 100',
+  ],
+  'let rate = 100'
+)
 
-async function askName() {
-  // This will prompt to ask question
-  const answers = await inquirer.prompt({
-    name: 'player_name',
-    type: 'input',
-    message: 'What is your name?',
-    default() {
-      return 'Player'
-    }
-  })
+await questionaire(
+  playerName,
+  5,
+  'Which statement creates a new Person object called “student”? \n',
+  [
+    'var student = new Person()', 
+    'var student = construct Person', 
+    'var student = Person()', 
+    'var student = construct Person()',
+  ],
+  'var student = new Person()'
+)
 
-  playerName = answers.player_name
-}
-
-async function questionOne() {
-  const answers = await inquirer.prompt({
-    name: 'question_one',
-    type: 'list',
-    message: 'JavaScript was created in 10 days then released on? \n',
-    choices: [
-      'May 23rd, 1995',
-      'Nov 24th, 1995',
-      'Dec 4th, 1995',
-      'Dec 17, 1996',
-    ],
-  })
-
-  return handleAnswer(answers.question_one === 'Dec 4th, 1995')
-}
-
-async function handleAnswer(isCorrect) {
-  const spinner = createSpinner('Checking answer...').start()
-  await sleep()
-
-  if (isCorrect) {
-    spinner.success({ text: `Nice work ${playerName}.`})
-  } else {
-    spinner.error({ text: `Game over, you lose ${playerName}!`})
-    process.exit(1)
-  }
-}
-
-async function winner() {
-  console.clear()
-  const message = `Congrats, ${playerName}!`
-
-  figlet(message, (err, data) => {
-    console.log(gradient.morning.multiline(data))
-  })
-}
-
-await welcome()
-await askName()
-await questionOne()
-await winner()
+await winner(playerName)
