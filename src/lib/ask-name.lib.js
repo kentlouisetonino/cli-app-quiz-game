@@ -8,7 +8,7 @@ const askName = async () => {
     message: 'What is your name?',
     default() {
       return 'Player'
-    }
+    },
   })
 
   return answers.player_name

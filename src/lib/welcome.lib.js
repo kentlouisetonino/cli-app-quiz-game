@@ -1,12 +1,10 @@
 import chalkAnimation from 'chalk-animation'
 import chalk from 'chalk'
 
-import sleep from './sleep.lib.js';
+import sleep from './sleep.lib.js'
 
 const welcome = async (quizType) => {
-  const neonTitle = chalkAnimation.neon(
-    `${quizType} QUIZ \n`
-  )
+  const neonTitle = chalkAnimation.neon(`${quizType} QUIZ \n`)
 
   await sleep()
   neonTitle.stop()

@@ -7,9 +7,9 @@ const handleAnswer = async (isCorrect, playerName) => {
   await sleep()
 
   if (isCorrect) {
-    spinner.success({ text: `Nice work ${playerName}.`})
+    spinner.success({ text: `Nice work ${playerName}.` })
   } else {
-    spinner.error({ text: `Game over, you lose ${playerName}!`})
+    spinner.error({ text: `Game over, you lose ${playerName}!` })
     process.exit(1)
   }
 }
