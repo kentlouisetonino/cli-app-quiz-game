@@ -5,8 +5,8 @@ import handleAnswer from './handle-answer.lib.js'
 const questionaire = async (
   playerName,
   questionNumber,
-  question, 
-  choicesArray, 
+  question,
+  choicesArray,
   correctAnswer,
 ) => {
   console.log('\n')
@@ -23,7 +23,6 @@ const questionaire = async (
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-    
       })
 
       return handleAnswer(one.question_one === `${correctAnswer}`, playerName)
@@ -38,7 +37,6 @@ const questionaire = async (
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-    
       })
 
       return handleAnswer(two.question_two === `${correctAnswer}`, playerName)
@@ -53,10 +51,12 @@ const questionaire = async (
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-    
       })
 
-      return handleAnswer(three.question_three === `${correctAnswer}`, playerName)
+      return handleAnswer(
+        three.question_three === `${correctAnswer}`,
+        playerName,
+      )
     case 4:
       const four = await inquirer.prompt({
         name: `question_four`,
@@ -68,7 +68,6 @@ const questionaire = async (
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-    
       })
 
       return handleAnswer(four.question_four === `${correctAnswer}`, playerName)
@@ -83,7 +82,6 @@ const questionaire = async (
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-    
       })
 
       return handleAnswer(five.question_five === `${correctAnswer}`, playerName)
