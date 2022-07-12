@@ -3,7 +3,7 @@
 
 ### Technologies | Packages
 - Backend: JavaScript, NodeJS, Chalk, Chalk Animation, Figlet, Gradient String, Inquirer, Nanospinner
-- DevOps: Git, Bash, Github, Github Actions
+- Others: Git, Bash, Github, Github Actions
 
 ### Setup
 1. Run the following commands.
