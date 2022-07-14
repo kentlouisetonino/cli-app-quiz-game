@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.js\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Kent Louise Tonino",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.0.1",
