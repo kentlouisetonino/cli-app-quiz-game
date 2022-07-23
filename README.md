@@ -2,7 +2,7 @@
 - A simple CLI app that will allow you to take a quiz using NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.js` file.
 
 ### Technologies | Packages
-- Backend: JavaScript, NodeJS, Chalk, Chalk Animation, Figlet, Gradient String, Inquirer, Nanospinner
+- Backend: NodeJS, Chalk, Chalk Animation, Figlet, Gradient String, Inquirer, Nanospinner
 - Others: Git, Bash, Github, Github Actions
 
 ### Setup
