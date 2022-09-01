@@ -4,7 +4,7 @@
 <br />
 
 ## Technologies | Packages | Tools:
-- Backend: NodeJS, Chalk, Chalk Animation, Figlet, Gradient String, Inquirer, Nanospinner
+- Backend: JavaScript, NodeJS
 - Others: Git, Bash, Github, Github Actions
 
 <br />
