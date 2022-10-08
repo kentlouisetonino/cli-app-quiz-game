@@ -1,7 +1,6 @@
 {
-  "name": "cli-quiz-game",
+  "name": "quiz-game",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +9,7 @@
     "format": "prettier --write \"src/**/*.js\""
   },
   "keywords": [],
-  "author": "Kent Louise Tonino",
+  "author": "Kent Louise G. Tonino",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.0.1",

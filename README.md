@@ -12,7 +12,7 @@
 ## Setup
 1. Run the following commands.
 ```bash
-git clone https://github.com/kenttonino/cli-quiz-game.git
+git clone https://github.com/kentlouisetonino/quiz-game.git
 npm install
 npm start
 ```
