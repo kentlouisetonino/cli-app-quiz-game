@@ -6,7 +6,7 @@
 - _Others: Git, Bash, Github, Github Actions_
 
 ## Setup
-_1. Run the following commands._
+- _Run the following commands._
 ```bash
 git clone https://github.com/kentlouisetonino/quiz-game.git
 npm install
