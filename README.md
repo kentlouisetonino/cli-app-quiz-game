@@ -1,6 +1,5 @@
 ## Description
-> - _A CLI Application that will allow you to take a quiz using NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices._
-> - _The questions and answer can be directly modify in the `src/index.js` file._
+> _A CLI Application that will allow you to take a quiz using NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.js` file._
 
 <br />
 
