@@ -3,7 +3,7 @@
 
 <br />
 
-## Technologies
+## Technology Stack
 > _**Backend** : JavaScript • NodeJS_ <br />
 > _**Others** : Git • Bash • Github • Github Actions_
 
