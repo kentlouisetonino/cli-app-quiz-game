@@ -4,8 +4,7 @@
 <br />
 
 ## Technology Stack
-> _**Backend** : JavaScript • NodeJS_ <br />
-> _**Others** : Git • Bash_
+> _JavaScript • NodeJS_ <br />
 
 <br />
 
