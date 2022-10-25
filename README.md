@@ -1,15 +1,15 @@
 ## Description
-> _A CLI Application that will allow you to take a quiz using NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.js` file._
+> A CLI Application that will allow you to take a quiz using NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.js` file.
 
 <br />
 
 ## Technology Stack
-> _JavaScript • NodeJS_ <br />
+> JavaScript • NodeJS
 
 <br />
 
 ## Setup
-> - _Run the following commands._
+> - Run the following commands.
 ```bash
 git clone https://github.com/kentlouisetonino/quiz-game.git
 npm install
