@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 
-const askName = async () => {
+export default async function askName() {
   // This will prompt to ask question
   const answers = await inquirer.prompt({
     name: 'player_name',
@@ -13,5 +13,3 @@ const askName = async () => {
 
   return answers.player_name
 }
-
-export default askName
