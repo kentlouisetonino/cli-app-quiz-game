@@ -4,7 +4,7 @@
 <br />
 
 ## Technology Stack
-> TypeScript • NodeJS • GitHub Actions Workflow
+> [Chalk](https://www.npmjs.com/package/chalk) • [Chalk Animation](https://www.npmjs.com/package/chalk-animation) • [Figlet](https://www.npmjs.com/package/figlet) • [Gradient String](https://www.npmjs.com/package/gradient-string) • [Inquirer](https://www.npmjs.com/package/inquirer) • [Nanospinner](https://www.npmjs.com/package/nanospinner) • [Pretter](https://www.npmjs.com/package/prettier) • [TypeScript](https://www.npmjs.com/package/typescript) • NodeJS • GitHub Actions Workflow
 
 <br />
 
