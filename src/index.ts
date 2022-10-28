@@ -1,5 +1,3 @@
-#!/user/bin/env node
-
 import askName from './lib/ask-name.lib.js'
 import questionaire from './lib/questionaire.lib.js'
 import welcome from './lib/welcome.lib.js'
