@@ -13,7 +13,6 @@
 ```bash
 git clone https://github.com/kentlouisetonino/quiz-game.git
 npm install
-npm run build
 npm run start
 ```
 
