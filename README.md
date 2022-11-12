@@ -1,5 +1,5 @@
 ## Description
-> A CLI Application that will allow you to take a quiz using TypeScript and NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.ts` file.
+> A CLI application that will allow you to take a quiz using TypeScript and NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.ts` file.
 
 <br />
 
