@@ -6,7 +6,7 @@
   "license": "ISC",
   "scripts": {
     "start": "tsc --build && node ./dist/index.js",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.{yml,ts}\""
   },
   "dependencies": {
     "@types/chalk-animation": "^1.6.1",
