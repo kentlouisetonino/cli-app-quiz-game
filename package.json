@@ -1,7 +1,6 @@
 {
-  "name": "quiz-game",
+  "name": "cli-quiz-game",
   "version": "1.0.0",
-  "main": "./dist/index.js",
   "type": "module",
   "author": "Kent Louise Tonino",
   "license": "ISC",
