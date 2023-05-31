@@ -24,7 +24,7 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: Install Dependencies
         run: |
-          npm ci
+          yarn install --frozen-lockfile
       - name: Run Prettier
         run: |
           npm run format
