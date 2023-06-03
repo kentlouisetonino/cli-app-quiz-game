@@ -7,15 +7,9 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "preserveConstEnums": true,
-    "lib": [
-      "es2020"
-    ],
-    "types": [
-      "node"
-    ],
+    "lib": ["es2020"],
+    "types": ["node"],
     "outDir": "dist"
   },
-  "include": [
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.ts"]
 }
