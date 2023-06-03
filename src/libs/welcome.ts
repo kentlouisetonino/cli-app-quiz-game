@@ -1,13 +1,13 @@
 import chalk from 'chalk';
 import chalkAnimation from 'chalk-animation';
 
-import sleep from './sleep.lib.js';
+import sleep from './sleep.js';
 
-interface Props {
+interface WelcomeProps {
   quizType: string;
 }
 
-export default async function welcome({ quizType }: Props) {
+export default async function welcome({ quizType }: WelcomeProps) {
   const neonTitle = chalkAnimation.neon(`${quizType} QUIZ \n`);
 
   await sleep();

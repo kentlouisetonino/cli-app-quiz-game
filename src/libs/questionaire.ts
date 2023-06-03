@@ -1,8 +1,8 @@
 import inquirer from 'inquirer';
 
-import handleAnswer from './handle-answer.lib.js';
+import handleAnswer from './handle-answer.js';
 
-interface Props {
+interface QuestionaireProps {
   playerName: string;
   questionNumber: number;
   question: string;
@@ -16,7 +16,7 @@ export default async function questionaire({
   question,
   choicesArray,
   correctAnswer,
-}: Props) {
+}: QuestionaireProps) {
   console.log('\n');
 
   switch (questionNumber) {

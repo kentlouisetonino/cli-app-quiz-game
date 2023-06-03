@@ -1,11 +1,11 @@
 import figlet from 'figlet';
 import gradient from 'gradient-string';
 
-interface Props {
+interface WinnerProps {
   playerName: string;
 }
 
-export default function winner({ playerName }: Props) {
+export default function winner({ playerName }: WinnerProps) {
   console.clear();
   console.log('test', playerName);
   const message = `Congrats, ${playerName}!`;

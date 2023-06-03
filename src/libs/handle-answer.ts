@@ -1,13 +1,16 @@
 import { createSpinner } from 'nanospinner';
 
-import sleep from './sleep.lib.js';
+import sleep from './sleep.js';
 
-interface Props {
+interface HandleAnswerProps {
   isCorrect: boolean;
   playerName: string;
 }
 
-export default async function handleAnswer({ isCorrect, playerName }: Props) {
+export default async function handleAnswer({
+  isCorrect,
+  playerName,
+}: HandleAnswerProps) {
   const spinner = createSpinner('Checking answer...').start();
   await sleep();
 

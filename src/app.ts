@@ -1,7 +1,7 @@
-import askName from './libs/ask-name.lib.js';
-import questionaire from './libs/questionaire.lib.js';
-import welcome from './libs/welcome.lib.js';
-import winner from './libs/winner.lib.js';
+import askName from './libs/ask-name.js';
+import questionaire from './libs/questionaire.js';
+import welcome from './libs/welcome.js';
+import winner from './libs/winner.js';
 
 let playerName;
 await welcome({ quizType: 'JAVASCRIPT' });
