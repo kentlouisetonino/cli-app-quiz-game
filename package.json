@@ -6,13 +6,14 @@
   "license": "ISC",
   "scripts": {
     "start": "tsc --build && node ./dist/index.js",
-    "format": "prettier --write \"src/**/*.{yml,ts}\""
+    "format": "prettier --write \"src/**/*.{yml,ts,prettierrc,json}\""
   },
   "dependencies": {
     "@types/chalk-animation": "^1.6.1",
     "@types/figlet": "^1.5.5",
     "@types/gradient-string": "^1.1.2",
     "@types/inquirer": "^9.0.2",
+    "@types/node": "^20.2.5",
     "chalk": "^5.0.1",
     "chalk-animation": "^2.0.2",
     "figlet": "^1.5.2",
