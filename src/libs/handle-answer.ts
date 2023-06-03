@@ -1,5 +1,4 @@
 import { createSpinner } from 'nanospinner';
-
 import sleep from './sleep.js';
 
 interface HandleAnswerProps {

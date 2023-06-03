@@ -1,6 +1,5 @@
 import chalk from 'chalk';
 import chalkAnimation from 'chalk-animation';
-
 import sleep from './sleep.js';
 
 interface WelcomeProps {

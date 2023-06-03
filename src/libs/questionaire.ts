@@ -1,5 +1,4 @@
 import inquirer from 'inquirer';
-
 import handleAnswer from './handle-answer.js';
 
 interface QuestionaireProps {
