@@ -5,7 +5,7 @@
   "author": "Kent Louise Tonino",
   "license": "ISC",
   "scripts": {
-    "start": "tsc --build && node ./dist/index.js",
+    "start": "tsc --build && node ./dist/app.js",
     "format": "prettier --write \"src/**/*.{yml,ts,prettierrc,json}\""
   },
   "dependencies": {
