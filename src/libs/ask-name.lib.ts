@@ -1,4 +1,4 @@
-import inquirer from 'inquirer'
+import inquirer from 'inquirer';
 
 export default async function askName() {
   // This will prompt to ask question
@@ -7,9 +7,9 @@ export default async function askName() {
     type: 'input',
     message: 'What is your name?',
     default() {
-      return 'Player'
+      return 'Player';
     },
-  })
+  });
 
-  return answers.player_name
+  return answers.player_name;
 }

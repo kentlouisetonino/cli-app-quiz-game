@@ -1,11 +1,11 @@
-import askName from './libs/ask-name.lib.js'
-import questionaire from './libs/questionaire.lib.js'
-import welcome from './libs/welcome.lib.js'
-import winner from './libs/winner.lib.js'
+import askName from './libs/ask-name.lib.js';
+import questionaire from './libs/questionaire.lib.js';
+import welcome from './libs/welcome.lib.js';
+import winner from './libs/winner.lib.js';
 
-let playerName
-await welcome({ quizType: 'JAVASCRIPT' })
-playerName = await askName()
+let playerName;
+await welcome({ quizType: 'JAVASCRIPT' });
+playerName = await askName();
 
 await questionaire({
   playerName: playerName,
@@ -18,7 +18,7 @@ await questionaire({
     'Dec 17, 1996',
   ],
   correctAnswer: 'Dec 4th, 1995',
-})
+});
 
 await questionaire({
   playerName: playerName,
@@ -27,7 +27,7 @@ await questionaire({
     'Which operator returns true if the two compared values are not equal? \n',
   choicesArray: ['<>', '~', '==!', '!=='],
   correctAnswer: '!==',
-})
+});
 
 await questionaire({
   playerName: playerName,
@@ -41,7 +41,7 @@ await questionaire({
   ],
   correctAnswer:
     'A for statement is generic, but a forEach statement can be used only with an array.',
-})
+});
 
 await questionaire({
   playerName: playerName,
@@ -55,7 +55,7 @@ await questionaire({
     'rate = 100',
   ],
   correctAnswer: 'let rate = 100',
-})
+});
 
 await questionaire({
   playerName: playerName,
@@ -68,6 +68,6 @@ await questionaire({
     'var student = construct Person()',
   ],
   correctAnswer: 'var student = new Person()',
-})
+});
 
-winner({ playerName: playerName })
+winner({ playerName: playerName });

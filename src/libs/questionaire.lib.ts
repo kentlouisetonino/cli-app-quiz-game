@@ -1,13 +1,13 @@
-import inquirer from 'inquirer'
+import inquirer from 'inquirer';
 
-import handleAnswer from './handle-answer.lib.js'
+import handleAnswer from './handle-answer.lib.js';
 
 interface Props {
-  playerName: string
-  questionNumber: number
-  question: string
-  choicesArray: string[]
-  correctAnswer: string
+  playerName: string;
+  questionNumber: number;
+  question: string;
+  choicesArray: string[];
+  correctAnswer: string;
 }
 
 export default async function questionaire({
@@ -17,7 +17,7 @@ export default async function questionaire({
   choicesArray,
   correctAnswer,
 }: Props) {
-  console.log('\n')
+  console.log('\n');
 
   switch (questionNumber) {
     case 1:
@@ -31,12 +31,12 @@ export default async function questionaire({
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-      })
+      });
 
       return handleAnswer({
         isCorrect: one.question_one === `${correctAnswer}`,
         playerName: playerName,
-      })
+      });
     case 2:
       const two = await inquirer.prompt({
         name: `question_two`,
@@ -48,12 +48,12 @@ export default async function questionaire({
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-      })
+      });
 
       return handleAnswer({
         isCorrect: two.question_two === `${correctAnswer}`,
         playerName: playerName,
-      })
+      });
     case 3:
       const three = await inquirer.prompt({
         name: `question_three`,
@@ -65,12 +65,12 @@ export default async function questionaire({
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-      })
+      });
 
       return handleAnswer({
         isCorrect: three.question_three === `${correctAnswer}`,
         playerName: playerName,
-      })
+      });
     case 4:
       const four = await inquirer.prompt({
         name: `question_four`,
@@ -82,12 +82,12 @@ export default async function questionaire({
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-      })
+      });
 
       return handleAnswer({
         isCorrect: four.question_four === `${correctAnswer}`,
         playerName: playerName,
-      })
+      });
     case 5:
       const five = await inquirer.prompt({
         name: `question_five`,
@@ -99,11 +99,11 @@ export default async function questionaire({
           `${choicesArray[2]}`,
           `${choicesArray[3]}`,
         ],
-      })
+      });
 
       return handleAnswer({
         isCorrect: five.question_five === `${correctAnswer}`,
         playerName: playerName,
-      })
+      });
   }
 }

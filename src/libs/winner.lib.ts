@@ -1,16 +1,16 @@
-import figlet from 'figlet'
-import gradient from 'gradient-string'
+import figlet from 'figlet';
+import gradient from 'gradient-string';
 
 interface Props {
-  playerName: string
+  playerName: string;
 }
 
 export default function winner({ playerName }: Props) {
-  console.clear()
-  console.log('test', playerName)
-  const message = `Congrats, ${playerName}!`
+  console.clear();
+  console.log('test', playerName);
+  const message = `Congrats, ${playerName}!`;
 
   figlet(message, (err, data) => {
-    console.log(gradient.morning.multiline(data))
-  })
+    console.log(gradient.morning.multiline(data));
+  });
 }
