@@ -14,8 +14,8 @@
 
 ```bash
 git clone https://github.com/kentlouisetonino/quiz-game.git
-npm install
-npm run start
+yarn install
+yarn start
 ```
 
 <br />
