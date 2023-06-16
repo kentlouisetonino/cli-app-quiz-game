@@ -1,6 +1,6 @@
 ## Description
 
-> - A CLI application that will allow you to take a quiz using NodeJS.
+> - A CLI application/program that will allow you to take a quiz using NodeJS.
 
 > - It will ask your name, and will ask you to answer different questions
     with its corresponding choices. The questions and answer can be
