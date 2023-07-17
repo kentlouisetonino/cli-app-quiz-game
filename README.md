@@ -1,6 +1,6 @@
 ## Description
 
-> - A CLI application that will allow you to take a JavaScript quiz. The main technology stack are TypeScript and NodeJS.
+> - A CLI computer program that will allow you to take a JavaScript quiz. The main technology stack are TypeScript and NodeJS.
 
 <br />
 
