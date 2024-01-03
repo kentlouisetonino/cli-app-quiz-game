@@ -1,4 +1,4 @@
-name: cli-quiz-game (develop)
+name: quiz-game (develop)
 
 on:
   push:
