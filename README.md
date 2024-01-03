@@ -7,6 +7,15 @@
 
 
 ## Local Development
+> - Pushing changes to all remote repository.
+```bash
+# Change permission mode and make it executable.
+chmod +x git-push-all
+
+# Push changes to all remote repository.
+./git-push-all
+```
+
 > - Run the following commands.
 
 ```bash
